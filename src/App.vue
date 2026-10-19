@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
-  <HelloWorld />
+  <div class="h-screen flex justify-center items-center text-center bg-mist-900 text-4xl text-white font-mono">Work in progress...</div>
 </template>
