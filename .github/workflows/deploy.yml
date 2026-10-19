@@ -44,6 +44,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Fix SPA Routing (Copy index.html to 404.html)
+        run: cp dist/index.html dist/404.html
+
       - name: Create CNAME file
         run: echo "jauri.zyneonapex.com" > ./dist/CNAME
 
