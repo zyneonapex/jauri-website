@@ -6,7 +6,7 @@ import App from './App.vue'
 
 const domain = location.hostname.toLowerCase();
 if(domain === "jauri.io" || domain === "jauri.zyneonapex.com" || domain === "www.jauri.dev" || domain === "jauri.dev" || domain === "www.jauri.app" || domain === "jauri.app") {
-    window.location.href = "https://www.jauri.io/" + window.location.pathname
+    window.location.href = "https://www.jauri.io" + window.location.pathname
 }
 
 const app = createApp(App)
