@@ -6,19 +6,18 @@ import App from './App.vue'
 
 const domain = location.hostname.toLowerCase();
 console.log(window.location.search)
-if(domain === "www.jauri.io" || domain === "jauri.zyneonapex.com" || domain === "www.jauri.dev" || domain === "jauri.dev" || domain === "www.jauri.app" || domain === "jauri.app") {
+
+//redirect official sources to main domain
+if(domain === "www.jauri.io" || domain === "jauri.zyneonapex.com" || domain === "jauri.zyneonstudios.com" || domain === "jauri.apex.zyneonstudios.com" || domain === "www.jauri.dev" || domain === "jauri.dev" || domain === "www.jauri.app" || domain === "jauri.app") {
     const pathname = window.location.pathname;
     const urlParams = new URLSearchParams(window.location.search);
     let path = "";
-
     if(pathname && pathname !== "/") {
         path = window.location.pathname
     }
-
     if(urlParams) {
         path += "?" + urlParams.toString();
     }
-
     window.location.href = "https://jauri.io" + path;
 }
 
